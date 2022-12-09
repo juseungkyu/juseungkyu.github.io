@@ -1,0 +1,597 @@
+/* 기본 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+footer .logo {
+    color: white;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 230px;
+}
+
+/* 푸터 */
+footer {
+    padding-top: 25px;
+    background-color: rgb(48, 51, 67);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid gray;
+}
+.container {
+    width: 1150px;
+    margin: auto;
+}
+.footer-container {
+    display: flex;
+}
+.footer-container p {
+    margin: 0;
+    margin-top: 10px;
+    color: rgb(214, 214, 214);
+}
+.img {
+    width: 140px;
+    height: 40px;
+    background-color: rosybrown;
+}
+.footer-info-box {
+    width: 450px;
+}
+.footer-info {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.footer-container .copyRight {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.footer-container hr {
+    margin: 12px 0 0 0;
+    border-color: rgba(236, 236, 236, 0.596);
+}
+.footer-list.first {
+    margin-left: 25px;
+}
+.footer-list {
+    margin-left: 120px;
+}
+.footer-list p {
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: 14px;
+    
+}
+.icons {
+    display: flex;
+    margin-left: 55px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50%;
+    padding: 9px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon img{
+    height: 25px;
+}
+.btn-1 {
+    display: inline-block;
+    min-width: 150px;
+    padding: 10px 5px;
+    border: 1px solid rgba(30, 30, 200, 0.7);
+    text-align: center;
+    text-decoration: none;
+    color: rgba(30, 30, 200, 0.7);
+}
+
+.btn-1:hover {
+    border: 1px solid rgba(30, 30, 200, 0.7);
+    background-color: rgba(30, 30, 200, 0.7);
+    color: white;
+}
+
+.container {
+    width: 1150px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.just-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.just-center {
+    display: flex;
+    justify-content: center;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+table {
+    border-spacing: 0px;
+} 
+
+header {
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(30, 30, 200, 0.7);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header .nav{
+    display: flex;
+    gap: 30px;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* 기본설정 종료 */
+
+
+/* 게시판 설정 */
+.design-helper {
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+#board {
+    width: 70%;
+}
+
+.board {
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid #aaaaaa;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.board>.title {
+    height: 70px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #aaaaaa;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.board>.title>h3 {
+    font-size: 20px;
+    padding-left: 20px;
+    max-width: 70%;
+}
+
+.board>.title>.info {
+    border-left: 1px solid #aaaaaa;
+    width: 30%;
+    font-size: 14px;
+    height: 100%;
+}
+
+.board>.title>.info>div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.board>.title>.info>div:nth-child(1) {
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.board>.body {
+    font-size: 14px;
+    padding: 20px;
+    word-break: break-all;
+}
+
+#login {
+    padding: 30px;
+    width: 25%;
+    height: 350px;
+    border: 1px solid #aaaaaa;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.pagecontroller {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 회원가입 */
+.join-container {
+	width: 1175px;
+	margin: 0 auto;
+	
+}
+.join-container > h2{
+	margin-top: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.join-container > h2 > span {
+    font-size: 30px;
+    color: #808080;
+}
+.joinForm {
+    padding: 10px;
+    padding-top: 20px;
+}
+.joinForm p {
+    margin: 0 auto;
+    margin-bottom: 6px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.joinForm input {
+    padding-left: 12px;
+    width: 100%;
+    background: #ececec;
+    border: none;
+    height: 35px;
+    border-radius: 8px;
+}
+.joinForm textarea {
+    padding: 12px;
+    width: 100%;
+    background: #ececec;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+}
+.joinForm input.joinBtn {
+    width: 100px;
+    padding: 0;
+    background: rgb(139, 209, 255);
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+}
+.joinForm input.joinBtn:hover {
+	background: rgb(99, 169, 215);
+	cursor: pointer;
+}
+.joinForm input.cancelBtn {
+    width: 100px;
+    padding: 0;
+}
+.joinForm input.cancelBtn:hover {
+	background: rgb(150, 150, 150);
+	cursor: pointer;
+}
+.joinForm .inp-box {
+    margin-bottom: 20px;
+}
+.joinForm .btn-box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* 로그인 */
+.login-container {
+	width: 1175px;
+	margin: 0 auto;
+	
+}
+.login-container > h2{
+	margin-top: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.login-container > h2 > span {
+    font-size: 30px;
+    color: #808080;
+}
+.loginForm {
+    padding: 10px;
+    padding-top: 20px;
+}
+.loginForm p {
+    margin: 0 auto;
+    margin-bottom: 6px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.loginForm input {
+    padding-left: 12px;
+    width: 100%;
+    background: #ececec;
+    border: none;
+    height: 35px;
+    border-radius: 8px;
+}
+.loginForm input.loginBtn {
+    width: 100px;
+    padding: 0;
+    background: rgb(139, 209, 255);
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+}
+.loginForm input.loginBtn:hover {
+	background: rgb(99, 169, 215);
+	cursor: pointer;
+}
+.loginForm input.cancelBtn {
+    width: 100px;
+    padding: 0;
+}
+.loginForm input.cancelBtn:hover {
+	background: rgb(150, 150, 150);
+	cursor: pointer;
+}
+.loginForm .inp-box {
+    margin-bottom: 20px;
+}
+.loginForm .btn-box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* 메인 페이지 */
+.aaa * {
+            padding: 0;
+            margin: 0 auto;
+}
+.aaa {
+	margin-bottom: 40px;
+    background-color: #222222;
+    display: flex;
+    height: 400px;
+}
+.visual {
+    width: 900px;
+    height: 100%;
+    background-color: #444444;
+    margin: 0;
+    overflow: hidden;
+}
+.visual > img {
+    object-fit: cover;
+	width: 100%;
+    height: 100%;
+	margin-bottom: 40px;
+    object-position: center 20%;
+}
+.right {
+    width: 250px;
+    height: 100%;
+    background-color: #555555;
+}
+.right > .start {
+    width: 100%;
+    height: 250px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+.right > .start > p {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: #ddd;
+}
+.right > .info {
+    width: 100%;
+    background-color: #999999;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.right > .info > .profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #C1C1C1;
+    margin: 0 0 0 20px;
+    background: url("../image/icon/miku-icon.png");
+    background-position: center;
+    background-size: cover;
+}
+.right > .info > .profile-info {
+    text-align: right;
+    margin-right: 20px;
+    line-height: 1.7;
+}
+.right > .info > .profile-info > .name {
+    font-size: 14px;
+}
+.profile-info > p {
+    margin: 0;
+}
+
+.profile-info > .name > span {
+    font-size: 14px;
+}
+.profile-info > .ranking {
+    font-size: 12px;
+}
+.profile-info > .one {
+    font-size: 12px;
+}
+.profile-info > .logout {
+    font-size: 10px;
+}
+.profile-info > .info-login {
+	text-align: left;
+}
+.profile-login{
+	display: flex;
+	align-items: center;
+	height: 150px;
+	justify-content: space-between;
+	width: 250px;
+	background-color: #97c1c7;
+}
+.profile-login > div button {
+	cursor: pointer;
+	width: 75px;
+	height: 38px;
+	border: none;
+	background-color: #ffc107;
+	border-radius: 10px;
+	font-size: 14px;
+	color: white;
+}
+
+.profile-login > div a:last-child > button {
+	background-color: #d749ae; 
+}
+
+
+
+.bbb {
+    margin-top: 40px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.bbb > .notice {
+    width: 320px;
+    height: 100%;
+    background-color: #fff;
+    border: 2px solid rgb(82, 82, 82);
+}
+.bbb > .community {
+    width: 800px;
+    height: 100%;
+    background-color: #fff;
+    border: 2px solid rgb(82, 82, 82);
+    
+}
+.bbb .bbb-box {
+    padding: 10px 25px;
+}
+.bbb .bbb-box > h5 {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 8px;
+}
+.ccc {
+    height: 60px;
+    margin-top: 40px;
+    background-color: #5b5b74;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ccc p {
+    color: #dadae0;
+    font-size: 18px;
+}
+.eee {
+    height: 620px;
+    background-color: #252531;
+    margin: 0;
+}
+.eee h2 {
+    padding-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+}
+.eee .posts {
+    display: flex;
+    justify-content: space-between;
+}
+.eee .posts > .post {
+    background-color: #dddddd;
+    width: 260px;
+    height: 350px;
+}
+.eee .posts > .post > div {
+    padding: 30px;
+    margin: 0;
+}
+.post > div p {
+    font-size: 11px;
+}
+.post > div h5 {
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.post > div > div {
+    height: 238px;
+    overflow: hidden;
+}
+.post > div > div > p {
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+.main {
+    margin: 0 auto;
+}

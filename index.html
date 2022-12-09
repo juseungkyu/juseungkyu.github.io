@@ -1,0 +1,122 @@
+<!-- 유저 정보 확인 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="./resources/css/basic.css">
+    <link rel="stylesheet" href="./resources/css/game.css">
+
+	<!-- 자료구조 -->
+    <script src="/resources/js/dataStructure/SpriteList.js"></script>
+
+    <!-- 유틸함수 -->
+    <script src="/resources/js/util/util.js"></script>
+    <script src="/resources/js/util/globalValue.js"></script>
+    <script src="/resources/js/util/localstorage.js"></script>
+    <script src="/resources/js/util/domControl.js"></script>
+    <script src="/resources/js/util/collisionCheck.js"></script>
+
+    <!-- 시작 -->
+    <script src="/resources/js/game/App.js" type='module'></script>
+
+    <style>
+
+		.align-center {
+			width : 100%;
+			height : 100%;
+    		justify-content: center;
+		}
+
+        body {
+        	background-color: rgba(39, 0, 0, 0.9);
+            height: 100vh;
+            overflow: hidden;
+            padding-bottom: 0px;
+        }
+        
+        header {
+        	position:fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="container just-between">
+            <a href="/">LOGO</a>
+            <div class="d-flex nav">
+                <ul>
+                    <li><a href="/game.jsp">게임시작</a></li>
+                    <li><a href="/board.jsp">게시판</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/login.jsp">로그인</a></li>
+                    <li><a href="/join.jsp">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 헤더 -->
+
+    <!-- 랭킹 팝업 -->
+    <div class="ranking-popup popup">
+        <div>
+            <h2>데모 버젼에서는 랭킹 시스템이 없습니다.</h2>
+        </div>
+    </div>
+    <!-- 랭킹 팝업 -->
+
+    <!-- 게임 선택 팝업 -->
+    <div class="select-game popup">
+        <div>
+            <div>
+                <button class="btn-2 basic-mode">모험모드</button>
+                <button class="btn-2 boss-mode">보스모드</button>
+            </div>
+        </div>
+    </div>
+    <!-- 게임 선택 팝업 -->
+
+    <!-- 빨강색 배경 -->
+    <div class="front-ground"></div>
+
+    <!-- 게임 -->
+    <div class="align-center">
+        <section id="game">
+            <!-- UI -->
+            <div id="ui">
+                <div id="play-state">
+                    <div class="stage"> 
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <div class="hp">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="count">
+                            <span>0발</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="miku">   
+                    <img src="./resources/image/player/1.png" alt="image" title="image">
+                </div>
+            </div>
+            <!-- UI -->
+
+            <!-- CANVAS -->
+            <div id="gameBox"></div>
+            <!-- CANVAS -->
+        </section>
+    </div>
+    <!-- 게임 -->
+</body>
+
+</html>

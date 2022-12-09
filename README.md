@@ -1,2 +1,0 @@
-# juseungkyu.github.io
-test
