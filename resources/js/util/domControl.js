@@ -49,11 +49,20 @@ async function getDotImage(url, scale = 3) {
 }
 
 // 불러온 이미지 저장
-async function imageSetting(imageUrls){
-	for(let url of imageUrls){
-		const urls = url.split('/')
-		const name = urls[urls.length-1].split('.')[0]
-		
-		window.imageObject[name] = await getDotImage(url)
-	}
+function imageSetting(imageUrls){
+	const length = imageUrls.length
+	let count = 0
+
+	return new Promise((res, rej)=> {
+		imageUrls.forEach(async url => {
+			const urls = url.split('/')
+			const name = urls[urls.length-1].split('.')[0]
+			
+			window.imageObject[name] = await getDotImage(url)
+
+			if(length <= ++count) {
+				res()
+			}
+		})
+	})
 }
