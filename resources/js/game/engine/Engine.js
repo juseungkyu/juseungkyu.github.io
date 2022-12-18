@@ -29,6 +29,13 @@ export default class Engine {
         window.uiSettingFunc = this.uiSet
         window.uiSettingFunc()
 
+        this.player1Img = document.querySelector('#player1')
+        this.player2Img = document.querySelector('#player2')
+        this.player3Img = document.querySelector('#player3')
+        this.player4Img = document.querySelector('#player4')
+        document.querySelector('#miku').innerHTML = ``
+        document.querySelector('#miku').appendChild(this.player1Img)
+
         this.gameSelect()
         
         this.beforeMap = [0, 1]
@@ -175,10 +182,8 @@ export default class Engine {
 
             //미쿠 쳐맞는 모션
             //1안
-            document.querySelector('#miku').innerHTML = `
-            <img src="./resources/image/player/4.png" alt="alt" title="image">
-            `
-
+            document.querySelector('#miku').innerHTML = ``
+            document.querySelector('#miku').appendChild(this.player4Img)
 
             // 2안 맞을 때 클로즈업
             // document.querySelector('#miku').innerHTML = `
@@ -189,26 +194,20 @@ export default class Engine {
             if (window.playerSprite.hp == 3) {
                 setTimeout(() => {
                     console.log("hp3 img print")
-                    document.querySelector('#miku').innerHTML = `
-                    <img src="./resources/image/player/1.png" alt="alt" title="image">
-                    `
-
+                    document.querySelector('#miku').innerHTML = ``
+                    document.querySelector('#miku').appendChild(this.player1Img)
                 }, 1000);
             } else if (window.playerSprite.hp == 2) {
                 setTimeout(() => {
                     console.log("hp2 img print")
-                    document.querySelector('#miku').innerHTML = `
-                        <img src="./resources/image/player/2.png" alt="alt" title="image">
-                        `
-
+                    document.querySelector('#miku').innerHTML = ``
+                    document.querySelector('#miku').appendChild(this.player2Img)
                 }, 1000);
             } else if (window.playerSprite.hp == 1) {
                 setTimeout(() => {
                     console.log("hp1 img print")
-                    document.querySelector('#miku').innerHTML = `
-                        <img src="./resources/image/player/3.png" alt="alt" title="image">
-                        `
-
+                    document.querySelector('#miku').innerHTML = ``
+                    document.querySelector('#miku').appendChild(this.player3Img)
                 }, 1000);
             }
 
